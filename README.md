@@ -7,13 +7,13 @@ Append the following `install` stanza of your `.travis.yml`:
 ```yml
 install:
   ...
-  - wget https://raw.githubusercontent.com/simonjbeaumont/ocaml-travis-ghpages/master/.travis-docgen.sh
+  - wget https://raw.githubusercontent.com/simonjbeaumont/ocaml-travis-gh-pages/master/travis-gh-pages.sh
 ```
 
 and add the following to your the `script` stanza:
 
 ```yml
-script: ... && bash -ex .travis-docgen.sh
+script: ... && bash -ex travis-gh-pages.sh
 ```
 
 ## Prerequisites
